@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWebsite</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour-standalone.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour-standalone.min.js" ></script>
+
+</head>
+<body class="container">
+  <br><br><br>
+  <header>
+    <h1 class="heading">Bootstrap Tour Implementation : The easiest way to show people how to use your website.
+</h1>
+  </header>
+  <br><br><br><hr><br><br>
+
+  <p id="e1">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis sit blanditiis adipisci deserunt. Alias quo facere quasi eum quod non possimus assumenda iure sapiente architecto. Pariatur minima quam reiciendis.
+  </p>
+  <br><br>
+  <p id="e2">
+   E2 :- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti inventore consectetur animi dolorem iusto repellendus, dolore, adipisci porro ullam vel ab facere et dolorum distinctio dignissimos ipsum aspernatur, quo minima.
+  </p>
+  <br>
+  <br> <h1><button onclick="starttour()">START TOUR</button></h1>
+
+
+  <script>
+    // Instance the tour
+var tour1 = new Tour({
+  steps: [
+    {
+    element: ".heading",
+    title: "This is heading of website",
+    content: "Click here to know more",
+    smartPlacement: true,
+    animation: true,
+    backdrop: true
+  },
+  {
+    element: "#e1",
+    title: "Title of first para",
+    content: "E1 :- Content of my step",
+    smartPlacement: true
+  },
+  {
+    element: "#e2",
+    title: "Title of Second Para",
+    content: "Click here to contact US..."
+  }
+]});
+
+function starttour(){
+// Initialize the tour
+tour1.init();
+
+// Start the tour
+tour1.start();
+}
+
+
+  </script>
+  
+</body>
+</html>

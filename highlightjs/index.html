@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Highlight.js - Documentation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/snazzy.min.css"  />
+</head>
+<body class="container">
+  <br><br>
+  <header>
+    <h1>Highlight.js - Documentation</h1>
+  </header>
+  <br><hr><br>
+
+  <p>
+    Highlight.js is a syntax highlighter written in JavaScript. It works in the browser as well as on the server. It can work with pretty much any markup, doesn’t depend on any other frameworks, and has automatic language detection.
+  </p>
+
+  <p>
+  <a href="https://highlightjs.org/"><button class="btn btn-info">Website</button></a>
+  <a href="https://github.com/highlightjs/highlight.js"><button class="btn btn-dark">GitHub</button></a>
+  <a href="https://www.youtube.com/playlist?list=PLFcP4G5x1z-oCWioFH1FpZDIf6FWLMHbP"><button class="btn btn-info">Solution Videos</button></a>
+  <a href="https://codexdindia.blogspot.com/2022/01/code-or-syntax-highlighting-using-highlightjs.html" rel="dofollow"><button class="btn btn-dark">Documentation</button></a>
+  
+  
+  </p>
+
+
+
+    <h2>Some JavaScript Code Example</h2>
+    <pre>
+      <code class="javascript">
+    $(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+      </code>
+    </pre>
+
+
+<div class="h2">Some HTML Code Highlighting</div>
+<hr>
+
+<pre><code class="html">
+&#x3C;div class=&#x22;container&#x22;&#x3E;
+&#x3C;pre&#x3E;&#x3C;code class=&#x22;javascript&#x22;&#x3E;
+$(document).ready(function() {
+  $(&#x27;pre code&#x27;).each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});
+&#x3C;/code&#x3E;&#x3C;/pre&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;script src=&#x22;https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script&#x3E;hljs.initHighlightingOnLoad();&#x3C;/script&#x3E;
+</code></pre>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

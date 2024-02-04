@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congrats - Name Here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+   <div class="container">
+
+  <h2>Congrats Mr. </h21><h1 id="name">Name Here</h1>
+  <br>
+  Your Age is <span id="agetext"></span> .
+ <form action="">
+   Name :- <input type="text" name="name"> <br>
+   Age :- <input type="text" name="age"> <br>
+   Class :- <input type="text" name="class"> <br>
+<button class="btn btn-outline-info" type="submit">GO</button>
+ </form>
+  </div>
+
+  <script>
+    //Defining Function
+    function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+document.title = 'Congrates - ' + getParameterByName('name');
+document.querySelector('#name').innerHTML = getParameterByName('name');
+document.querySelector('#agetext').innerHTML = getParameterByName('age');
+
+
+  </script>
+</body>
+</html>

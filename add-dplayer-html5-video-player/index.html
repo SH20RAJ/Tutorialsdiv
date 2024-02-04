@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Video</title>
+  
+
+</head>
+<body>
+  <div id="dplayer"></div>
+
+  <hr>
+
+   <div id="eplayer"></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/dplayer@1.27.1/dist/DPlayer.min.js"></script>
+<script>
+    const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    screenshot: true,
+    video: {
+        url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/CastVideos/mp4/BigBuckBunny.mp4',
+       pic:'DPlayer.png'
+
+    }, 
+      logo : 'https://bit.ly/samplefavicon',
+});
+
+  </script>
+
+
+<script>
+    const dp2 = new DPlayer({
+    container: document.getElementById('eplayer'),
+    screenshot: true,
+      airplay: true,
+      logo: 'DPlayer.png',
+     video: {
+        quality: [
+            {
+                name: '1080p',
+                url: 'https://cdn.jsdelivr.net/gh/SH20RAJ/sample@main/video/raining_1080p.mp4',
+                type: 'normal',
+            },
+            {
+                name: '480p',
+                url: 'https://cdn.jsdelivr.net/gh/SH20RAJ/sample@main/video/raining_480p.mp4',
+                type: 'normal',
+            },
+        ],
+        defaultQuality: 0,
+        pic: 'DPlayer.png',
+        thumbnails: 'https://cdn.foliovision.com/images/2020/11/160p-00001.jpg',
+       
+    },
+      contextmenu: [
+        {
+            text: 'Article',
+            link: 'https://dev.to/sh20raj/dplayer-custom-html5-video-player-integration-42d4',
+        },
+        {
+            text: 'More',
+            click: (player) => {
+                console.log(player);
+            },
+        },
+    ],
+    highlight: [
+        {
+            text: 'marker for 20s',
+            time: 20,
+        },
+        {
+            text: 'marker for 2mins',
+            time: 120,
+        },
+    ],
+
+});
+
+  </script>
+  <style>
+    #dplayer, #eplayer {
+      width: 500px;
+    }
+  </style>
+
+
+ 
+
+</body>
+</html>

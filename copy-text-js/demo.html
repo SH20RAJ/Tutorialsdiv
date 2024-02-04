@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Text</title>
+</head>
+<body>
+  <input type="text" value="My Name is ... " id="text">
+ <button onclick="copy('#text','cut')">COPY</button>
+
+ <input type="text" value="Another Text" id="text2">
+ <button onclick="copy('#text2','copy')">COPY</button>
+ <button onclick="copy('#text2','cut')">CUT</button>
+
+
+
+
+
+
+
+<div id="newtxt" onclick="copy()" style="user-select:all;">
+Newtxt - Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sint earum sunt quibusdam autem magnam numquam dolor omnis, repellendus necessitatibus cupiditate delectus mollitia suscipit aperiam quo ipsam dicta, soluta provident.
+</div>
+
+
+
+
+
+
+
+
+
+
+ <script>
+   //Let's create a selector of input tag...
+   // var txt = document.querySelector('#text');
+   function copy(selector,command){
+     if(selector) document.querySelector(selector).select();//This Function will Select the text under #text...
+
+     //Let's make a function for Copying...
+     if(!command) command = 'copy' ;//if users will not enter any value then default value is copy
+     document.execCommand(command) //This Function will Execute the copy command on whatever selected on the webpage...
+
+
+   }
+ </script>
+</body>
+</html>

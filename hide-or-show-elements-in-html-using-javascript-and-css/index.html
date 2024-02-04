@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hide or show Elements in HTML Using JavaScript and Css
+</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+  <br>
+  <header>
+    <h1>Hide or show Elements in HTML Using JavaScript and Css
+</h1>
+  </header>
+  <br><hr><br>
+  <h2>Here is an Element.</h2> <button class="btn btn-outline-success" onclick="hideunhide('#showmore')">Hide/Show</button>
+
+  <code>
+    <p id="showmore" class="">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem expedita porro atque id ad, voluptatum maxime dolores obcaecati. Officiis mollitia facilis eveniet aliquam laudantium non tempore delectus quo incidunt temporibus.
+    </p>
+  </code>
+
+<style>
+  .hidden{
+    display:none;
+  }
+</style>
+
+<script>
+  function hideunhide(a){
+    document.querySelector(a).classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  }
+header{
+  background: rgb(162, 248, 154);
+  font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+  font-style: normal;
+  font-size: 45;
+  font-weight: 700;
+}
+header,h1 {
+  font-size: xx-larger;
+  padding: 4px;
+}
+.container {
+  background: rgb(255, 255, 255);
+  margin: 10px;
+
+}
+
+h2 {
+  font-family: Comic Sans MS;
+}
+.pink {
+  color: hotpink;
+}
+.line{
+  height: 4px;
+  background: rgb(21, 129, 230);
+}
+.center {
+  text-align: center;
+}

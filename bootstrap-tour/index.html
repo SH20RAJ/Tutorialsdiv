@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tour : Implementation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour-standalone.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour-standalone.min.js" ></script>
+</head>
+<body>
+  <br><br><br>
+  <header>
+    <h1>Bootstrap Tour : Implementation</h1>
+  </header>
+  <br><hr><br><br>
+
+<pre>
+  <p id="my-element">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi commodi iusto cupiditate et ex adipisci magnam vel, inventore illo, doloremque fugit iste? Fuga, praesentium saepe? Recusandae optio aliquid nesciunt.
+  </p>
+</pre>
+
+<hr>
+<pre>
+  <p id="my-other-element">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi commodi iusto cupiditate et ex adipisci magnam vel, inventore illo, doloremque fugit iste? Fuga, praesentium saepe? Recusandae optio aliquid nesciunt.
+  </p>
+</pre>
+
+  <script>
+    // Instance the tour
+var tour = new Tour({
+  steps: [
+  {
+    element: "#my-element",
+    title: "Title of my step",
+    content: "Content of my step"
+  },
+  {
+    element: "#my-other-element",
+    title: "Title of my other step",
+    content: "Content of my step"
+  }
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();
+
+
+//or use a function to initialize tour
+function inittour(){
+// Initialize the tour
+tour.init();
+// Start the tour
+tour.start();
+}
+  </script>
+
+</body>
+</html>

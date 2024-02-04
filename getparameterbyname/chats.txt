@@ -1,0 +1,51 @@
+
+
+Get URL Search String Parameters with JavaScript - getParameterByName(name,url)
+
+
+Related Article link in description....
+
+However php has a $_GET[] Variable to get the value of url parameters...
+
+But JavaSCript Dosen't have any by default  function or variable for this...
+
+
+But you can get the full url using the location object
+
+so we will extract the search query using location.href and regx ...
+
+We have a function you can see ...
+getParameterByName()
+
+You just have to copy paste this
+Let's Test it on Console....
+
+
+Parameter 1 :- For the name of Query ...
+Parameter 2 :- (Optional - Default Value = location.href)
+
+You can see the diffrence and usage....
+
+So you can get the value and use if statements and do many more things with this useful function...
+
+We will use...
+
+Let's Use...
+
+We will see a little application of getting parameter
+
+So Here is a Little Application...
+You can use it in massive projects...
+i.e. Search,whishing websites,etc...
+
+
+So Thanks For Watching...
+/
+/
+/
+/
+/
+/
+
+
+

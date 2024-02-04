@@ -1,0 +1,50 @@
+
+
+A SimplePlaylist Tutorial Using JS -
+HTML5 Video Player with Playlist Using JavaScript
+
+Here we have a sample video tag and spme sample video and poster links...
+
+Let's Start creating our simple playlist using pure javascript
+
+Let's Create a Function For Changing the video on click...
+
+Here we can the src using this method....
+
+Now Let's Check our player...
+
+
+Yes It's working like a playlist you can further customize it and create a better version of this(Using Css)
+
+Also add the poster preview here
+instead of only text...
+
+It will look better..
+
+Let's make it more awesome using css...
+
+You can make better than youtube playlist view...
+
+
+So Thanks For Watching till last
+
+Hope you got some idea to create a playlist...
+
+
+If you wanna video on vjs,plyr plalist then do comment...
+
+
+Thanks...
+/
+/
+/
+/
+/
+
+
+
+
+
+
+
+

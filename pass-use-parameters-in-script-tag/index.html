@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pass parameters to a Script tag - Get Parameters of Current Script Tag Src
+</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+  <div class="post">
+    <p style="text-align: center;">
+  <span style="font-size: x-large;"><h1> Pass parameters to a Script tag - Get Parameters of Current Script Tag
+    Src</h1></span>
+    <br><br>
+    <hr><br>
+</p><span style="font-size: medium;">
+Let This is Script Tag in your main html and you have to get the value of id parameter in script.js&nbsp;</span><div><span style="font-size: medium;">or</span><div><span style="font-size: medium;">Get Parameters of Current Script Tag Src</span></div><div><span style="font-size: medium;">or</span></div><div><span style="font-size: medium;">Pass parameters to a Script tag</span></div><div><span style="font-size: medium;"><br /></span></div><div><span style="font-size: medium;">See an Example Below -<br /></span><pre>  <code class="language-javascript">
+//Script Tag in Main HTML (i.e. index.html)
+&lt;script src="script.js?id=WqoYv89"&gt;&lt;/script&gt;
+  </code>
+</pre><span style="font-size: medium;">
+Here is Content of <b><i><u>script.js
+</u></i></b></span><pre>  <code class="language-javascript">
+//Content of Script.js
+let params = new URL(document.currentScript.src);
+params = params.searchParams;
+console.log(params.get('id'));
+
+  </code>
+</pre><span style="font-size: medium;">
+
+Result on Console :-&nbsp;</span><div><br /></div><div><i>&nbsp;<b>WqoYv89
+</b></i><p>
+  <span style="font-size: medium;"><br /></span>
+</p>
+<p>
+  <span style="font-size: medium;">About UrlSearchParams :-&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams">https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/get</a></span></p><p><span style="font-size: medium;">About Document.currentScript :-&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript">https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript</a></span></p>
+<p>
+  <span style="font-size: medium;">
+    Source :- <a href="https://codexdindia.blogspot.com/2021/06/pass-parameters-to-script-tag-get-parameters-of-current-script-tag.html" rel="dofollow">CXDI - Serve Technology</a><br /></span>
+</p>
+<p>
+  <span style="font-size: medium;"><br /></span>
+</p>
+<p>
+  <span style="font-size: medium;"><br /></span>
+</p>
+<p>
+  <span style="font-size: medium;"><br /></span>
+</p>
+</div></div></div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+#capture {
+  background: rgb(238, 182, 182);
+  width: 650px;
+  height: 400px;
+  border: 2px solid rgb(51, 230, 146);
+  border-radius: 6px;
+}
+#capture h1{
+  text-align: center;
+  color: rgb(77, 75, 245);
+  font-size: 50px;
+}
+#capture img {
+  width: 200px;
+  padding: 4px;
+  float: left;
+}
+#capture .foot {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+}

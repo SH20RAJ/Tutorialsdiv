@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get URL Parameter By name Using JavaScript</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class='container post-body entry-content float-container' id='post-body-172376304380512506'>
+<div style="text-align: center;">
+  <span style="font-size: xx-large;">Get URL Search String Parameters with JavaScript -
+    getParameterByName(name,url)</span>
+</div>
+<div style="text-align: center;">
+  <span style="font-size: xx-large;"><br /></span>
+</div>
+<div style="text-align: left;">
+  <span style="font-size: medium;">Here is the Code you can use to get the url parameters ....</span>
+</div>
+<div style="text-align: left;"><br /></div>
+<div style="text-align: left;"><br /></div>
+<pre><code class="language-javascript">function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&amp;');
+    var regex = new RegExp('[?&amp;]' + name + '(=([^&amp;#]*)|&amp;|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+</code>
+</pre>
+<div><span style="font-size: medium;">For Example :-</span></div>
+<div>
+  <span style="font-size: medium;">I have URL :-
+    <b><u>https://mywebsite.com/about?name=John&amp;age=17</u></b> and we want
+    to see the value of name .</span>
+</div>
+<div><span style="font-size: medium;">Here value is John.</span></div>
+<div>
+  <span style="font-size: medium;">So for getting the value&nbsp;</span><span style="font-size: medium;">run&nbsp;</span>getParameterByName('name')
+  <span style="font-size: medium;">function. to get <b>John </b>as returned value.</span>
+</div>
+<div><br /></div>
+<div>
+  <span style="font-size: medium;">However the <b><u>second parameter is optional</u> </b>but if you want to
+    <u>get search string from a string instead of current url</u> then you can
+    pass the string in second parameter.</span>
+</div>
+<div>
+  <span style="font-size: medium;"><br /></span>
+</div>
+<div><span style="font-size: medium;">i.e.&nbsp;</span></div>
+
+<pre><code class="language-javascript">
+
+
+var str = https://mywebsite.com/about?name=John&amp;age=17;
+var age = getParameterByName('age',str);//Extracting your age from String instead of URL
+
+console.log('Your Age is '+ age);
+
+
+//Your Function is Here
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&amp;');
+    var regex = new RegExp('[?&amp;]' + name + '(=([^&amp;#]*)|&amp;|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+</code>
+</pre>
+
+
+<div><br /></div>
+</div>
+
+<script src="../analytics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🦋 vLitejs is a fast and lightweight Javascript library for customizing video and audio player in Javascript with a minimalist theme (HTML5, Youtube, Vimeo)</title>
+  <link href="https://cdn.jsdelivr.net/npm/vlitejs@4/dist/vlite.css" rel="stylesheet" crossorigin />
+<script src="https://cdn.jsdelivr.net/npm/vlitejs@4" crossorigin></script>
+  
+</head>
+
+<body>
+  <h2>Sample Video</h2>
+
+<video id="player1" class="vlite-js" src="https://bit.ly/bbsamplevideo
+" height="300px" poster="https://bit.ly/bbsampleposter">
+  <track label="English" kind="subtitles" srclang="en" src="https://yoriiis.github.io/cdn/static/vlitejs/demo-video-html5-subtitle-en.vtt" default />
+</video>
+
+  
+<hr>
+  <h2>Sample Audio</h2>
+  
+<audio id="player2" class="vlite-js" src="https://bit.ly/bbsampleaudio"></audio>
+
+
+
+  <script>
+    new Vlitejs('#player1');
+    new Vlitejs('#player2');
+
+  </script>
+</body>
+
+</html>
